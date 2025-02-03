@@ -1,0 +1,40 @@
+Number of OpenMP threads: 4
+
+ Grid spacing: 0.01
+  Grid size X: 50
+  Grid size Y: 50
+  Grid size Z: 100
+    Time step: 5e-07
+ Maximum time: 0.001
+
+     Output rate: every 200 step(s)
+ Output sampling: 10000 Hz
+
+ Output files:
+
+      pressure: complete dump to file out_p.dat
+    velocity X: complete dump to file out_vx.dat
+    velocity Y: complete dump to file out_vy.dat
+    velocity Z: complete dump to file out_vz.dat
+
+ Source infos:
+
+          type: sine wave
+     frequency: 3400 Hz
+    position x: 0.5
+    position y: 0.5
+    position z: 0.5
+
+step      200/2000 (ETA:  102.535 seconds)
+step      400/2000 (ETA:   87.277 seconds)
+step      600/2000 (ETA:   75.653 seconds)
+step      800/2000 (ETA:   63.486 seconds)
+step     1000/2000 (ETA:   53.793 seconds)
+step     1200/2000 (ETA:   43.346 seconds)
+step     1400/2000 (ETA:   32.809 seconds)
+step     1600/2000 (ETA:   22.440 seconds)
+step     1800/2000 (ETA:   11.269 seconds)
+step     2000/2000
+
+Elapsed 116.147333 seconds (17.228 Mupdates/s)
+

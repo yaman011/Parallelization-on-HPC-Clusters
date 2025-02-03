@@ -1,0 +1,8 @@
+1e-2
+5e-7
+0.005
+200
+cin_simple_2x.dat
+rhoin_simple_2x.dat
+sine 3400 1.00 0.5 0.5
+cut_z pressure out_simple_2x_pz_05.dat 0.5

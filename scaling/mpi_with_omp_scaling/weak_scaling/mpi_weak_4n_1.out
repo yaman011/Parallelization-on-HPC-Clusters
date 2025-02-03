@@ -1,0 +1,32 @@
+Number of OpenMP threads: 2
+
+ Grid spacing: 0.0025
+  Grid size X: 100
+  Grid size Y: 100
+  Grid size Z: 200
+    Time step: 5e-07
+ Maximum time: 0.001
+
+  Output is disabled (not output specified)
+
+ Source infos:
+
+          type: sine wave
+     frequency: 3400 Hz
+    position x: 0.5
+    position y: 0.5
+    position z: 0.5
+
+step      200/2000 (ETA:  431.034 seconds)
+step      400/2000 (ETA:  387.221 seconds)
+step      600/2000 (ETA:  337.916 seconds)
+step      800/2000 (ETA:  291.975 seconds)
+step     1000/2000 (ETA:  244.583 seconds)
+step     1200/2000 (ETA:  196.453 seconds)
+step     1400/2000 (ETA:  147.756 seconds)
+step     1600/2000 (ETA:   98.898 seconds)
+step     1800/2000 (ETA:   49.359 seconds)
+step     2000/2000
+
+Elapsed 494.125278 seconds (259.173 Mupdates/s)
+

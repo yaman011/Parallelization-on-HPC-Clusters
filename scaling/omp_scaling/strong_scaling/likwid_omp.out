@@ -1,0 +1,112 @@
+--------------------------------------------------------------------------------
+CPU name:	AMD EPYC 7542 32-Core Processor                
+CPU type:	AMD K17 (Zen2) architecture
+CPU clock:	2.90 GHz
+ERROR - [./src/includes/perfmon_perfevent.h:perfmon_setupCountersThread_perfevent:869] Permission denied.
+Setup of event ACTUAL_CPU_CLOCK on CPU 14 failed: Permission denied
+ERROR - [./src/includes/perfmon_perfevent.h:perfmon_setupCountersThread_perfevent:869] Permission denied.
+Setup of event MAX_CPU_CLOCK on CPU 14 failed: Permission denied
+ERROR - [./src/includes/perfmon_perfevent.h:perfmon_setupCountersThread_perfevent:869] Permission denied.
+Setup of event ACTUAL_CPU_CLOCK on CPU 15 failed: Permission denied
+ERROR - [./src/includes/perfmon_perfevent.h:perfmon_setupCountersThread_perfevent:869] Permission denied.
+Setup of event MAX_CPU_CLOCK on CPU 15 failed: Permission denied
+ERROR - [./src/includes/perfmon_perfevent.h:perfmon_setupCountersThread_perfevent:869] Permission denied.
+Setup of event ACTUAL_CPU_CLOCK on CPU 16 failed: Permission denied
+ERROR - [./src/includes/perfmon_perfevent.h:perfmon_setupCountersThread_perfevent:869] Permission denied.
+Setup of event MAX_CPU_CLOCK on CPU 16 failed: Permission denied
+ERROR - [./src/includes/perfmon_perfevent.h:perfmon_setupCountersThread_perfevent:869] Permission denied.
+Setup of event ACTUAL_CPU_CLOCK on CPU 17 failed: Permission denied
+ERROR - [./src/includes/perfmon_perfevent.h:perfmon_setupCountersThread_perfevent:869] Permission denied.
+Setup of event MAX_CPU_CLOCK on CPU 17 failed: Permission denied
+--------------------------------------------------------------------------------
+
+ Grid spacing: 0.01
+  Grid size X: 100
+  Grid size Y: 100
+  Grid size Z: 100
+    Time step: 5e-07
+ Maximum time: 0.001
+
+     Output rate: every 200 step(s)
+ Output sampling: 10000 Hz
+
+ Output files:
+
+      pressure: complete dump to file out_p.dat
+    velocity X: complete dump to file out_vx.dat
+    velocity Y: complete dump to file out_vy.dat
+    velocity Z: complete dump to file out_vz.dat
+
+ Source infos:
+
+          type: sine wave
+     frequency: 3400 Hz
+    position x: 0.5
+    position y: 0.5
+    position z: 0.5
+
+step      200/2000 (ETA:   37.271 seconds)
+step      400/2000 (ETA:   33.063 seconds)
+step      600/2000 (ETA:   28.884 seconds)
+step      800/2000 (ETA:   24.723 seconds)
+step     1000/2000 (ETA:   20.582 seconds)
+step     1200/2000 (ETA:   16.463 seconds)
+step     1400/2000 (ETA:   12.347 seconds)
+step     1600/2000 (ETA:    8.229 seconds)
+step     1800/2000 (ETA:    4.114 seconds)
+step     2000/2000
+
+Elapsed 41.144930 seconds (48.633 Mupdates/s)
+
+--------------------------------------------------------------------------------
+Group 1: CACHE
++------------------------+---------+--------------+--------------+--------------+--------------+
+|          Event         | Counter |  HWThread 14 |  HWThread 15 |  HWThread 16 |  HWThread 17 |
++------------------------+---------+--------------+--------------+--------------+--------------+
+|    ACTUAL_CPU_CLOCK    |  FIXC1  |            0 |            0 |            0 |            0 |
+|      MAX_CPU_CLOCK     |  FIXC2  |            0 |            0 |            0 |            0 |
+|  RETIRED_INSTRUCTIONS  |   PMC0  | 335517505031 | 335235123048 | 340078908671 | 340113383134 |
+|   CPU_CLOCKS_UNHALTED  |   PMC1  | 118020238601 | 118289589217 | 118379843961 | 118390668950 |
+|   DATA_CACHE_ACCESSES  |   PMC2  | 198551164808 | 198385093314 | 201237526427 | 201258240342 |
+| DATA_CACHE_REFILLS_ALL |   PMC3  |    591170901 |    630823928 |    641317513 |    640973651 |
++------------------------+---------+--------------+--------------+--------------+--------------+
+
++-----------------------------+---------+---------------+--------------+--------------+--------------+
+|            Event            | Counter |      Sum      |      Min     |      Max     |      Avg     |
++-----------------------------+---------+---------------+--------------+--------------+--------------+
+|    ACTUAL_CPU_CLOCK STAT    |  FIXC1  |             0 |            0 |            0 |            0 |
+|      MAX_CPU_CLOCK STAT     |  FIXC2  |             0 |            0 |            0 |            0 |
+|  RETIRED_INSTRUCTIONS STAT  |   PMC0  | 1350944919884 | 335235123048 | 340113383134 | 337736229971 |
+|   CPU_CLOCKS_UNHALTED STAT  |   PMC1  |  473080340729 | 118020238601 | 118390668950 | 1.182701e+11 |
+|   DATA_CACHE_ACCESSES STAT  |   PMC2  |  799432024891 | 198385093314 | 201258240342 | 1.998580e+11 |
+| DATA_CACHE_REFILLS_ALL STAT |   PMC3  |    2504285993 |    591170901 |    641317513 | 6.260715e+08 |
++-----------------------------+---------+---------------+--------------+--------------+--------------+
+
++-------------------------+--------------+--------------+--------------+--------------+
+|          Metric         |  HWThread 14 |  HWThread 15 |  HWThread 16 |  HWThread 17 |
++-------------------------+--------------+--------------+--------------+--------------+
+|   Runtime (RDTSC) [s]   |      41.3605 |      41.3605 |      41.3605 |      41.3605 |
+|   Runtime unhalted [s]  |            0 |            0 |            0 |            0 |
+|       Clock [MHz]       |       -      |       -      |       -      |       -      |
+|           CPI           |       0.3518 |       0.3529 |       0.3481 |       0.3481 |
+|   data cache requests   | 198551164808 | 198385093314 | 201237526427 | 201258240342 |
+| data cache request rate |       0.5918 |       0.5918 |       0.5917 |       0.5917 |
+|    data cache misses    |    591170901 |    630823928 |    641317513 |    640973651 |
+|   data cache miss rate  |       0.0018 |       0.0019 |       0.0019 |       0.0019 |
+|  data cache miss ratio  |       0.0030 |       0.0032 |       0.0032 |       0.0032 |
++-------------------------+--------------+--------------+--------------+--------------+
+
++------------------------------+--------------+--------------+--------------+--------------+
+|            Metric            |      Sum     |      Min     |      Max     |      Avg     |
++------------------------------+--------------+--------------+--------------+--------------+
+|   Runtime (RDTSC) [s] STAT   |     165.4420 |      41.3605 |      41.3605 |      41.3605 |
+|   Runtime unhalted [s] STAT  |            0 |            0 |            0 |            0 |
+|       Clock [MHz] STAT       |            0 |      inf     |            0 |            0 |
+|           CPI STAT           |       1.4009 |       0.3481 |       0.3529 |       0.3502 |
+|   data cache requests STAT   | 799432024891 | 198385093314 | 201258240342 | 1.998580e+11 |
+| data cache request rate STAT |       2.3670 |       0.5917 |       0.5918 |       0.5917 |
+|    data cache misses STAT    |   2504285993 |    591170901 |    641317513 | 6.260715e+08 |
+|   data cache miss rate STAT  |       0.0075 |       0.0018 |       0.0019 |       0.0019 |
+|  data cache miss ratio STAT  |       0.0126 |       0.0030 |       0.0032 |       0.0032 |
++------------------------------+--------------+--------------+--------------+--------------+
+

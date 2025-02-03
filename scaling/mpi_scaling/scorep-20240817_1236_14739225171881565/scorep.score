@@ -1,0 +1,53 @@
+
+Estimated aggregate size of event trace:                   2836MB
+Estimated requirements for largest trace buffer (max_buf): 91MB
+Estimated memory requirements (SCOREP_TOTAL_MEMORY):       93MB
+(hint: When tracing set SCOREP_TOTAL_MEMORY=93MB to avoid intermediate flushes
+ or reduce requirements using USR regions filters.)
+
+flt     type max_buf[B]      visits time[s] time[%] time/visit[us]  region
+         ALL 94,830,203 112,508,577 6262.71   100.0          55.66  ALL
+         USR 92,380,548 111,355,457 5996.82    95.8          53.85  USR
+         MPI  2,346,316   1,024,928  231.35     3.7         225.73  MPI
+         COM    104,130     128,160   34.53     0.6         269.43  COM
+      SCOREP         41          32    0.00     0.0          51.64  SCOREP
+
+         USR 91,911,456 110,778,111   16.98     0.3           0.15  lattice_below
+         MPI  1,068,534     384,192    1.95     0.0           5.06  MPI_Irecv
+         MPI  1,068,534     384,192    3.39     0.1           8.83  MPI_Isend
+         MPI    208,104     256,128  192.55     3.1         751.77  MPI_Waitall
+         USR    104,052     128,064    0.08     0.0           0.59  allocate_comm_buffers
+         USR     52,026      64,032    0.02     0.0           0.36  closest_index
+         USR     52,026      64,032    0.04     0.0           0.65  apply_source
+         USR     52,026      64,032 2621.97    41.9       40947.74  update_inner_pressure
+         USR     52,026      64,032   98.56     1.6        1539.20  update_outer_pressure
+         USR     52,026      64,032 3108.34    49.6       48543.58  update_inner_velocities
+         USR     52,026      64,032  133.96     2.1        2092.02  update_outer_velocities
+         USR     52,026      64,032    0.03     0.0           0.54  swap_timesteps
+         COM     52,026      64,032   17.72     0.3         276.71  update_pressure
+         COM     52,026      64,032   16.71     0.3         260.94  update_velocities
+         MPI        858          64    0.00     0.0           0.41  MPI_Cart_coords
+         USR        286         352    0.01     0.0          26.30  allocate_local_data
+         USR        208         256    2.22     0.0        8690.32  fill_local_data
+         USR         78          65    0.00     0.0           0.48  allocate_global_data
+         MPI         78          96    0.00     0.0           0.69  MPI_Cart_shift
+         USR         52          64    0.00     0.0           1.01  copy_string
+         USR         52          64    0.02     0.0         297.03  open_datafile
+         USR         52          64    0.00     0.0           0.57  read_data
+         MPI         52          64    0.00     0.0           0.81  MPI_Comm_rank
+         MPI         52          64    0.00     0.0           3.58  MPI_Comm_size
+      SCOREP         41          32    0.00     0.0          51.64  fdtd_instrumented
+         COM         26          32    0.01     0.0         183.07  initialize_mpi
+         COM         26          32    0.00     0.0           5.64  finalize_mpi
+         USR         26           1    0.00     0.0           6.64  print_source
+         USR         26          32    0.00     0.0           4.10  read_sourceparam
+         USR         26          32    0.01     0.0         301.82  read_paramfile
+         USR         26          32   14.55     0.2      454577.19  interpolate_inputmaps
+         USR         26          32    0.00     0.0          34.89  init_simulation
+         USR         26          32    0.00     0.0           3.03  free_comm_buffers
+         USR         26          32    0.04     0.0        1106.64  finalize_simulation
+         COM         26          32    0.10     0.0        3014.10  main
+         MPI         26          32    0.06     0.0        1946.95  MPI_Cart_create
+         MPI         26          32    0.00     0.0           6.38  MPI_Dims_create
+         MPI         26          32    0.86     0.0       26728.81  MPI_Finalize
+         MPI         26          32   32.55     0.5     1017133.56  MPI_Init

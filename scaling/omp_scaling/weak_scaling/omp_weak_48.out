@@ -1,0 +1,28 @@
+
+ Grid spacing: 0.00141
+  Grid size X: 709
+  Grid size Y: 709
+  Grid size Z: 709
+    Time step: 5e-07
+ Maximum time: 0.001
+
+  Output is disabled (not output specified)
+
+ Source infos:
+
+          type: sine wave
+     frequency: 3400 Hz
+    position x: 0.5
+    position y: 0.5
+    position z: 0.5
+
+step      200/2000 (ETA: 1096.312 seconds)
+step      400/2000 (ETA:  974.527 seconds)
+step      600/2000 (ETA:  852.942 seconds)
+step      800/2000 (ETA:  731.458 seconds)
+step     1000/2000 (ETA:  610.046 seconds)
+step     1200/2000 (ETA:  488.437 seconds)
+step     1400/2000 (ETA:  366.586 seconds)
+step     1600/2000 (ETA:  244.558 seconds)
+step     1800/2000 (ETA:  122.358 seconds)
+slurmstepd: error: *** JOB 7419183 ON nic5-w017 CANCELLED AT 2024-08-17T00:53:03 DUE TO TIME LIMIT ***

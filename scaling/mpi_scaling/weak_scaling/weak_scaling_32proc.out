@@ -1,0 +1,31 @@
+
+ Grid spacing: 0.003
+  Grid size X: 83
+  Grid size Y: 83
+  Grid size Z: 166
+    Time step: 5e-07
+ Maximum time: 0.001
+
+  Output is disabled (not output specified)
+
+ Source infos:
+
+          type: sine wave
+     frequency: 3400 Hz
+    position x: 0.5
+    position y: 0.5
+    position z: 0.5
+
+step      200/2000 (ETA:  184.138 seconds)
+step      400/2000 (ETA:  165.775 seconds)
+step      600/2000 (ETA:  146.154 seconds)
+step      800/2000 (ETA:  123.712 seconds)
+step     1000/2000 (ETA:  103.233 seconds)
+step     1200/2000 (ETA:   82.880 seconds)
+step     1400/2000 (ETA:   62.058 seconds)
+step     1600/2000 (ETA:   41.399 seconds)
+step     1800/2000 (ETA:   20.714 seconds)
+step     2000/2000
+
+Elapsed 207.013840 seconds (356.928 Mupdates/s)
+

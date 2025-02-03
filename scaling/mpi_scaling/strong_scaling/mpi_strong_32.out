@@ -1,0 +1,39 @@
+
+ Grid spacing: 0.01
+  Grid size X: 25
+  Grid size Y: 25
+  Grid size Z: 50
+    Time step: 5e-07
+ Maximum time: 0.001
+
+     Output rate: every 200 step(s)
+ Output sampling: 10000 Hz
+
+ Output files:
+
+      pressure: complete dump to file out_p.dat
+    velocity X: complete dump to file out_vx.dat
+    velocity Y: complete dump to file out_vy.dat
+    velocity Z: complete dump to file out_vz.dat
+
+ Source infos:
+
+          type: sine wave
+     frequency: 3400 Hz
+    position x: 0.5
+    position y: 0.5
+    position z: 0.5
+
+step      200/2000 (ETA:    5.400 seconds)
+step      400/2000 (ETA:    4.590 seconds)
+step      600/2000 (ETA:    3.949 seconds)
+step      800/2000 (ETA:    3.356 seconds)
+step     1000/2000 (ETA:    2.782 seconds)
+step     1200/2000 (ETA:    2.218 seconds)
+step     1400/2000 (ETA:    1.660 seconds)
+step     1600/2000 (ETA:    1.120 seconds)
+step     1800/2000 (ETA:    0.558 seconds)
+step     2000/2000
+
+Elapsed 5.574905 seconds (358.930 Mupdates/s)
+
